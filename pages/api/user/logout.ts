@@ -10,7 +10,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
                 path: '/',
             })
         );
-        return res.status(201).json({ msg: 'User signed out' });
+        return res.status(201).json({ msg: 'Déconnexion réussie' });
     } catch (error) {
         console.error(error);
         return res.status(501).json({ msg: 'Server Error' });

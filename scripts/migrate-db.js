@@ -1,3 +1,6 @@
+// import path from path
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 const path = require('path')
 const mysql = require('mysql2')
 const envPath = path.resolve(process.cwd(), '.env.local')
@@ -6,19 +9,31 @@ require('dotenv').config({ path: envPath })
 
 export const db = process.env.NODE_ENV === 'development' 
     ? mysql.createConnection({
-        host: process.env.DB_HOST,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        port: process.env.DB_PORT,
-        database: process.env.DB_NAME
+        host: 'localhost',
+        // process.env.DB_HOST,
+        user: 'root',
+        // process.env.DB_USER,
+        password: 'nioudemb',
+        // process.env.DB_PASSWORD,
+        port: '3306',
+        // process.env.DB_PORT,
+        database: 'nioudem',
+        // process.env.DB_NAME,
+        ssl: {rejectUnauthorized: false},
     })
 
     : mysql.createConnection({
-        host: process.env.DB_PROD_HOST,
-        user: process.env.DB_PROD_USER,
-        password: process.env.DB_PROD_PASSWORD,
-        database: process.env.DB_PROD_NAME,
-        ssl: {}
+        host: 'localhost',
+        // process.env.DB_HOST,
+        user: 'root',
+        // process.env.DB_USER,
+        password: 'nioudemb',
+        // process.env.DB_PASSWORD,
+        port: '3306',
+        // process.env.DB_PORT,
+        database: 'nioudem',
+        // process.env.DB_NAME,
+        ssl: {rejectUnauthorized: false},
     })
 
 function query(q, values)  {

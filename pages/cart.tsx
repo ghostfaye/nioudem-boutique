@@ -49,16 +49,16 @@ const Cart: NextPage = () => {
                             />
                             <div className="mt-3 mb-4 text-center">
                                 <h4 className="text-black text-xl font-semibold pb-1">
-                                    Your bag is empty :(
+                                    Votre panier est vide :(
                                 </h4>
                                 <p className="text-gray-600">
-                                    You dont have any products in your cart.
+                                    Vous n'avez pas d'articles dans votre panier.
                                 </p>
                             </div>
                             <div>
                                 <Link href="/" passHref>
                                     <button className="py-1 px-2 border border-yellow-600 text-yellow-600 uppercase hover:text-white hover:bg-yellow-600 rounded-full w-64 focus:outline-none">
-                                        Continue shopping
+                                        Continuer mes achats
                                     </button>
                                 </Link>
                             </div>
@@ -66,7 +66,7 @@ const Cart: NextPage = () => {
                                 <div className="mt-2 pb-2">
                                     <Link href="/login" passHref>
                                         <button className="py-1 px-2 border border-gray-600 text-gray-600 uppercase hover:text-white hover:bg-gray-600 rounded-full w-64 focus:outline-none">
-                                            Log in
+                                            Connexion
                                         </button>
                                     </Link>
                                 </div>
@@ -77,18 +77,18 @@ const Cart: NextPage = () => {
                             <div className="pt-6">
                                 <div className="text-sm flex text-yellow-600">
                                     <Link href="/" passHref>
-                                        Home
+                                        Accueil
                                     </Link>
                                     <div className="pl-2">{`>`}</div>
                                     <div className="pl-2 text-gray-600">Your Bag</div>
                                 </div>
                                 <h3 className="text-lg sm:text-2xl pt-6 pb-2 font-semibold">
-                                    Your Bag
+                                    Mon panier
                                 </h3>
                                 <div className="flex text-sm sm:text-base text-gray-600 pb-4">
-                                    Subtotal ({cart.length} items) :
+                                    Total ({cart.length} items) :
                                     <div className="text-black font-bold pl-2">
-                                        ₹{totalAmt.toLocaleString('en-IN')}
+                                        {totalAmt.toLocaleString('en-IN')} FCFA
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ const Cart: NextPage = () => {
                                                             </div>
                                                         </div>
                                                         <div className="pl-3 w-3/20 text-sm text-black font-bold sm:hidden">
-                                                            ₹{parseInt(item.price) * item.items!}
+                                                            {parseInt(item.price) * item.items!} FCFA
                                                         </div>
                                                         <div className="flex flex-col hidden sm:block">
                                                             <div className="hidden sm:block text-sm sm:text-lg">
@@ -144,7 +144,7 @@ const Cart: NextPage = () => {
                                                         </div>
                                                     </div>
                                                     <div className="hidden sm:block font-bold text-sm sm:text-lg pl-4">
-                                                        ₹{item.price}
+                                                        {item.price} FCFA
                                                     </div>
                                                 </div>
                                             </div>

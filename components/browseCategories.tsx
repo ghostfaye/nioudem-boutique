@@ -5,7 +5,7 @@ export default function BrowseCategories() {
     return (
         <div className="max-w-full pb-8">
             <div className="px-6 pt-4">
-                <div className="text-lg sm:text-xl font-semibold pt-6">Browse Categories</div>
+                <div className="text-lg sm:text-xl font-semibold pt-6">Rechercher par categories</div>
                 <div className="pt-6">
                     <div className="grid lg:grid-flow-col lg:grid-rows-3 gap-3">
                         <div className="p-4 bg-white rounded-md border border-gray-300">
@@ -24,10 +24,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col text-sm sm:text-base">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 10% Off
+                                                jusqu'a -10% 
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Food & Snacks
+                                                Biscuits & Snacks
                                             </div>
                                         </div>
                                     </div>
@@ -66,10 +66,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 55% Off
+                                            jusqu'a -10%
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Beverages
+                                                Boissons
                                             </div>
                                         </div>
                                     </div>
@@ -108,10 +108,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 10% Off
+                                                Jusqu'a -10% 
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Fruits & Vegetables
+                                                Fruits & Legumes
                                             </div>
                                         </div>
                                     </div>
@@ -150,10 +150,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 10% Off
+                                                Jusqu'a -10% 
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Personal Care
+                                                Soins Personels
                                             </div>
                                         </div>
                                     </div>
@@ -192,10 +192,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 15% Off
+                                                Jusqu'a -10%
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Pet Care
+                                                Soins animalier
                                             </div>
                                         </div>
                                     </div>
@@ -234,10 +234,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 30% Off
+                                                Jusqu'a  -30% 
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Household Items
+                                                Entretien maison
                                             </div>
                                         </div>
                                     </div>
@@ -276,10 +276,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 35% Off
+                                                Jusqu'a  -35% 
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Noodles & Instant Food
+                                                Nouilles & Plats instantanés
                                             </div>
                                         </div>
                                     </div>
@@ -318,10 +318,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 15% Off
+                                                Jusqu'a -15%
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Breaksfast & Dairy
+                                                Petit dejeuner
                                             </div>
                                         </div>
                                     </div>
@@ -360,10 +360,10 @@ export default function BrowseCategories() {
                                     <div className="pl-2 sm:pl-4 w-1/2 sm:w-auto">
                                         <div className="flex flex-col">
                                             <div className="text-green-600 text-xs uppercase font-semibold">
-                                                Up to 20% Off
+                                               Jusqu'a -20%
                                             </div>
                                             <div className="pt-2 uppercase text-sm font-bold">
-                                                Grocery & Staples
+                                                Epicerie
                                             </div>
                                         </div>
                                     </div>

@@ -42,7 +42,7 @@ const Category: NextPage<CategoryProps> = (props: CategoryProps) => {
                         <div className="px-6">
                             <div className="pt-6">
                                 <div className="text-sm flex text-yellow-600">
-                                    <Link href="/">Home</Link>
+                                    <Link href="/">Accueil</Link>
                                     <div className="pl-2">{`>`}</div>
                                     <div className="pl-2 text-gray-600">{catName}</div>
                                 </div>
@@ -61,7 +61,7 @@ const Category: NextPage<CategoryProps> = (props: CategoryProps) => {
                                         >
                                             <div className="flex flex-col max-w-full">
                                                 <div className="p-1 my-2 w-16 flex items-center justify-center bg-green-600 text-white text-xs uppercase rounded-md font-bold">
-                                                    {item.discount}% Off
+                                                    - {item.discount}%
                                                 </div>
                                                 <div className="mb-3 flex justify-center">
                                                     <Link
@@ -78,9 +78,9 @@ const Category: NextPage<CategoryProps> = (props: CategoryProps) => {
                                                     </Link>
                                                 </div>
                                                 <div className="flex items-end text-yellow-600 font-bold text-base mb-2">
-                                                    ₹{item.price}
+                                                    {item.price} FCFA
                                                     <div className="line-through text-sm text-gray-600 font-medium pl-2">
-                                                        ₹{item.price_before_discount}
+                                                        {item.price_before_discount} FCFA
                                                     </div>
                                                 </div>
                                                 <div className="text-gray-600 tracking-wide text-sm overflow-hidden overflow-ellipsis whitespace-nowrap mb-1">

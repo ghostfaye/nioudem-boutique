@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className="bg-gray-700 text-white p-4 fixed top-0 w-full z-10">
             <div className="sm:flex justify-between items-center w-full hidden">
-                <h2 className="text-base lg:text-xl font-semibold tracking-wide">Grocery App</h2>
+                <h2 className="text-base lg:text-xl font-semibold tracking-wide">NIOUDEM BOUTIQUE</h2>
                 <div className="flex flex-row items-end">
                     <div className="flex-grow hidden sm:block">
                         {authLoading || cartLoading ? (
@@ -50,14 +50,14 @@ export default function Navbar() {
                                 onClick={() => signOut!()}
                                 className="bg-transparent hover:underline text-sm focus:outline-none font-semibold"
                             >
-                                Log out
+                                Deconnexion
                             </button>
                         </div>
                     ) : (
                         <div className="flex flex-col items-center text-xs ml-8">
-                            Your Account
+                            Mon compte
                             <p className="hover:underline text-sm focus:outline-none font-semibold">
-                                <Link href="/login">Log in/Sign up</Link>
+                                <Link href="/login">Connexion / Inscription</Link>
                             </p>
                         </div>
                     )}
@@ -84,7 +84,7 @@ export default function Navbar() {
                             )}
                         </div>
                         <Link href="/cart">
-                            <p className="hover:underline text-sm">My Bag</p>
+                            <p className="hover:underline text-sm">Mon Panier</p>
                         </Link>
                     </div>
                 </div>

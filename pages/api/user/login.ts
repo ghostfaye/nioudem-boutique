@@ -17,11 +17,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             email
         );
         if (!target_user || target_user.length === 0) {
-            return res.status(401).json({ msg: 'Invalid username or password' });
+            return res.status(401).json({ msg: "Nom d'utilisateur ou mot de passe incorecte" });
         }
         let valid_pass = await bcrypt.compare(password, target_user[0].password);
         if (!valid_pass) {
-            return res.status(401).json({ msg: 'Invalid username or password' });
+            return res.status(401).json({ msg: "Nom d'utilisateur ou mot de passe incorecte" });
         }
         const token = jwtGenerator(target_user[0].id);
         // save token in http-only cookie
@@ -36,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         );
         res.status(201).json({
             success: true,
-            message: 'User is signed in',
+            message: 'Connexion réussie',
             name: target_user[0].name,
         });
     } catch (error) {

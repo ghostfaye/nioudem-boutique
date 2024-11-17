@@ -44,7 +44,7 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                     <main className="max-w-full px-6">
                         <div className="pt-6">
                             <div className="text-sm flex text-yellow-600">
-                                <Link href="/">Home</Link>
+                                <Link href="/">Accueil</Link>
                                 <div className="pl-2">{`>`}</div>
                                 <div className="pl-2 text-gray-600">
                                     {`Results for \"${query}\"`}
@@ -60,13 +60,13 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                             />
                             <div className="mt-3 mb-4 text-center">
                                 <h4 className="text-black text-xl font-semibold pb-1">
-                                    {`No results found for \"${query}\"`}
+                                    {`Pas de resultat trouvé pour \"${query}\"`}
                                 </h4>
                             </div>
                             <div>
                                 <Link href="/" passHref>
                                     <button className="py-1 px-2 border border-yellow-600 text-yellow-600 uppercase hover:text-white hover:bg-yellow-600 rounded-full w-64 focus:outline-none">
-                                        Continue shopping
+                                        Continuer mes achats
                                     </button>
                                 </Link>
                             </div>
@@ -74,7 +74,7 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                                 <div className="mt-2 pb-2">
                                     <Link href="/login" passHref>
                                         <button className="py-1 px-2 border border-gray-600 text-gray-600 uppercase hover:text-white hover:bg-gray-600 rounded-full w-64 focus:outline-none">
-                                            Log in
+                                            Connexion
                                         </button>
                                     </Link>
                                 </div>
@@ -86,7 +86,7 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                         <div className="px-6">
                             <div className="pt-6">
                                 <div className="text-sm flex text-yellow-600">
-                                    <Link href="/">Home</Link>
+                                    <Link href="/">Accueil</Link>
                                     <div className="pl-2">{`>`}</div>
                                     <div className="pl-2 text-gray-600">
                                         {`Results for \"${query}\"`}
@@ -107,7 +107,7 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                                         >
                                             <div className="flex flex-col max-w-full">
                                                 <div className="p-1 my-2 w-16 flex items-center justify-center bg-green-600 text-white text-xs uppercase rounded-md font-bold">
-                                                    {item.discount}% Off
+                                                    - {item.discount}% 
                                                 </div>
                                                 <div className="mb-3 flex justify-center">
                                                     <Link
@@ -124,9 +124,9 @@ const Search: NextPage<SearchProps> = (props: SearchProps) => {
                                                     </Link>
                                                 </div>
                                                 <div className="flex items-end text-yellow-600 font-bold text-base mb-2">
-                                                    ₹{item.price}
+                                                    {item.price} FCFA
                                                     <div className="line-through text-sm text-gray-600 font-medium pl-2">
-                                                        ₹{item.price_before_discount}
+                                                        {item.price_before_discount} FCFA
                                                     </div>
                                                 </div>
                                                 <div className="text-gray-600 tracking-wide text-sm overflow-hidden overflow-ellipsis whitespace-nowrap mb-1">

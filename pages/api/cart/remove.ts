@@ -20,7 +20,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             [user_id, product_id]
         );
         if (!order_exists || order_exists!.length === 0) {
-            return res.status(401).json({ msg: 'Cannot find that order' });
+            return res.status(401).json({ msg: 'Impossible de trouver la commande' });
         }
         // Update order in the DB
         let qtyBefore = order_exists[0].qty;
@@ -34,7 +34,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             `,
                 [user_id, product_id]
             );
-            return res.status(200).json({ msg: 'Deleted order' });
+            return res.status(200).json({ msg: 'Commande supprimé' });
         }
         await query(
             `
@@ -46,7 +46,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             [qtyBefore - 1, user_id, product_id]
         );
         return res.status(200).json({
-            msg: 'Updated Order',
+            msg: 'Commande mis à jour',
             product: { product_id, qty: qtyBefore - 1 },
         });
     } catch (error) {

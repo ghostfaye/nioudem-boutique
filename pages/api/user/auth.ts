@@ -18,9 +18,9 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             id
         );
         if (!currUser || currUser.length === 0) {
-            return res.status(401).json({ msg: 'Sign in Again' });
+            return res.status(401).json({ msg: 'Se reconnecter' });
         }
-        return res.status(200).json({ msg: 'Fetched user info', name: currUser[0].name });
+        return res.status(200).json({ msg: 'Informations utilisateur récupérées', name: currUser[0].name });
     } catch (error) {
         console.error('Error gettting user info', error);
         return res.status(501).json({ msg: 'Server Error' });

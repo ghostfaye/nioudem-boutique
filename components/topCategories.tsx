@@ -15,7 +15,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Grocery & Staples</span>
+                            <span className="hover:text-yellow-600">Épicerie et Produits de Base</span>
                         </div>
                     </Link>
                     <Link href="/category/Fruits & Vegetables" passHref>
@@ -27,7 +27,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Fruits & Vegetables</span>
+                            <span className="hover:text-yellow-600">Fruits & Legumes</span>
                         </div>
                     </Link>
                     <Link href="/category/Personal Care" passHref>
@@ -39,7 +39,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Personal Care</span>
+                            <span className="hover:text-yellow-600">Soins Personnels</span>
                         </div>
                     </Link>
                     <Link href="/category/Household Items" passHref>
@@ -51,7 +51,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Household Care</span>
+                            <span className="hover:text-yellow-600">Entretien Maison</span>
                         </div>
                     </Link>
                     <Link href="/category/Food & Snacks" passHref>
@@ -64,7 +64,7 @@ export default function TopCategories() {
                                 />
                             </div>
                             <span className="hover:text-yellow-600">
-                                Biscuits, Snacks & Chocolates
+                                Biscuits, Snacks & Chocolats
                             </span>
                         </div>
                     </Link>
@@ -77,7 +77,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Beverages</span>
+                            <span className="hover:text-yellow-600">Boissons</span>
                         </div>
                     </Link>
                     <Link href="/category/Breakfast & Dairy" passHref>
@@ -89,7 +89,7 @@ export default function TopCategories() {
                                     width={100}
                                 />
                             </div>
-                            <span className="hover:text-yellow-600">Breakfast & Dairy</span>
+                            <span className="hover:text-yellow-600">Petit-déjeuner et Produits Laitiers</span>
                         </div>
                     </Link>
                     <Link href="/category/Noodles, Sauces & Instant Food" passHref>
@@ -102,7 +102,7 @@ export default function TopCategories() {
                                 />
                             </div>
                             <span className="hover:text-yellow-600">
-                                Noodles, Sauces & Instant Food
+                            Nouilles, Sauces et Plats Instantanés
                             </span>
                         </div>
                     </Link>

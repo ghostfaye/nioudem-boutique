@@ -21,7 +21,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             product_id,
             qty,
         }));
-        return res.status(200).json({ users_cart, msg: "Fetched user's cart" });
+        return res.status(200).json({ users_cart, msg: "Panier de l'utilisateur récupéré" });
     } catch (error) {
         console.error(error);
         return res.status(501).json({ msg: 'Server Error' });

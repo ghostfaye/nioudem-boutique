@@ -47,7 +47,7 @@ const Product: NextPage<ProductProps> = (props: ProductProps) => {
                         <div className="px-6">
                             <div className="pt-6">
                                 <div className="text-sm flex text-yellow-600">
-                                    <Link href="/">Home</Link>
+                                    <Link href="/">Accueil</Link>
                                     <div className="pl-2">{`>`}</div>
                                     <div className="pl-2 overflow-hidden overflow-ellipsis whitespace-nowrap">
                                         <Link href={`/category/${catName}`}>{catName}</Link>
@@ -64,7 +64,7 @@ const Product: NextPage<ProductProps> = (props: ProductProps) => {
                                 {product.discount && (
                                     <div className="sm:hidden my-2 w-16">
                                         <div className="p-1 flex items-center justify-center bg-green-600 text-white text-xs uppercase rounded-md font-bold">
-                                            {product.discount}% Off
+                                            - {product.discount}% 
                                         </div>
                                     </div>
                                 )}
@@ -83,7 +83,7 @@ const Product: NextPage<ProductProps> = (props: ProductProps) => {
                                         {product.discount && (
                                             <div className="hidden sm:block my-2 w-16">
                                                 <div className="p-1 flex items-center justify-center bg-green-600 text-white text-xs uppercase rounded-md font-bold">
-                                                    {product.discount}% Off
+                                                    - {product.discount}% 
                                                 </div>
                                             </div>
                                         )}
@@ -96,42 +96,42 @@ const Product: NextPage<ProductProps> = (props: ProductProps) => {
                                         <div className="hidden sm:block pt-4 flex flex-col text-sm font-medium sm:text-base">
                                             {product.price_before_discount && (
                                                 <div className="flex flex-row justify-start pb-1 text-gray-600 text-sm">
-                                                    MRP:
+                                                    Prix:
                                                     <div className="line-through text-gray-600 pl-3 font-medium">
-                                                        ₹{product.price_before_discount}
+                                                        {product.price_before_discount} FCFA
                                                     </div>
                                                 </div>
                                             )}
                                             <div className="flex flex-row justify-start pb-1 text-yellow-600 py-1">
-                                                Price:
+                                                Promo:
                                                 <div className="font-bold pl-3">
-                                                    ₹{product.price}
+                                                    {product.price} FCFA
                                                 </div>
                                             </div>
                                             {product.price_before_discount && (
                                                 <div className="flex flex-row justify-start pb-2 text-gray-600 text-sm pt-1">
-                                                    You Save:
+                                                    Voous avez économisé:
                                                     <div className="pl-3 text-yellow-600 font-medium">
-                                                        ₹{getPriceDifference(product)}
+                                                        {getPriceDifference(product)} FCFA
                                                     </div>
                                                 </div>
                                             )}
                                         </div>
                                         <div className="sm:hidden flex flex-row items-end font-medium py-2">
                                             <div className="font-bold pl-3 text-yellow-600">
-                                                ₹{product.price}
+                                                {product.price} FCFA
                                             </div>
                                             {product.price_before_discount && (
                                                 <div className="line-through text-gray-800 pl-3 text-sm">
-                                                    ₹{product.price_before_discount}
+                                                    {product.price_before_discount} FCFA
                                                 </div>
                                             )}
                                         </div>
                                         {product.price_before_discount && (
                                             <div className="sm:hidden text-gray-600 text-sm flex flex-row">
-                                                You save:{' '}
+                                                Vous avez economisé:{' '}
                                                 <div className="pl-2 text-yellow-600 font-medium">
-                                                    ₹{getPriceDifference(product)}
+                                                    {getPriceDifference(product)} FCFA
                                                 </div>
                                             </div>
                                         )}

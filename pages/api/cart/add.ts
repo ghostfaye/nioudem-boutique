@@ -29,7 +29,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
                 [user_id, product_id]
             );
             return res.status(200).json({
-                msg: 'Added product to cart',
+                msg: 'Produit ajouté au panier',
                 product: { product_id, qty: 1 },
             });
         }
@@ -45,7 +45,7 @@ async function handler(req: CustomRequest, res: NextApiResponse) {
             [qtyBefore + 1, user_id, product_id]
         );
         return res.status(200).json({
-            msg: 'Updated Order',
+            msg: 'Commande mis à jour',
             product: { product_id, qty: qtyBefore + 1 },
         });
     } catch (error) {

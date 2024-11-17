@@ -17,7 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             email
         );
         if (user_exists.length > 0) {
-            return res.status(401).json({ msg: 'Email already taken' });
+            return res.status(401).json({ msg: 'Email deja utilisé' });
         }
         const salt_round = 10;
         const salt = await bcrypt.genSalt(salt_round);
@@ -51,7 +51,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         );
         res.status(201).json({
             success: true,
-            message: 'Registered user',
+            message: 'Inscription réussie',
             name: new_user[0].name,
         });
     } catch (error) {

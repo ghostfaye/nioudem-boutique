@@ -21,7 +21,7 @@ export default function SearchBar() {
                         className="search nav-search focus:outline-none pl-2 py-2 pr-6"
                         type="search"
                         name="search"
-                        placeholder="Search for products"
+                        placeholder="Rechercher produits"
                         onChange={(e) => setQuery(e.target.value)}
                     />
                     <div className="absolute right-0 top-0 mt-3 mr-2">

@@ -14,7 +14,7 @@ export function ActionButton(props: ActionButtonPropType) {
         return (
             <Link href="/login" passHref>
                 <button className="text-center font-semibold border border-yellow-600 rounded-md text-yellow-600 p-1 uppercase text-sm focus:outline-none hover:bg-yellow-600 hover:text-white w-full">
-                    ADD TO CART
+                    Ajouter au panier
                 </button>
             </Link>
         );
@@ -25,7 +25,7 @@ export function ActionButton(props: ActionButtonPropType) {
                 onClick={() => addItem!(product.id)}
                 className="text-center font-semibold border border-yellow-600 rounded-md text-yellow-600 p-1 uppercase text-sm focus:outline-none hover:bg-yellow-600 hover:text-white w-full"
             >
-                ADD TO CART
+                Ajouter au panier
             </button>
         );
     }
@@ -37,7 +37,7 @@ export function ActionButton(props: ActionButtonPropType) {
                 onClick={() => addItem!(product.id)}
                 className="text-center font-semibold border border-yellow-600 rounded-md text-yellow-600 p-1 uppercase text-sm focus:outline-none hover:bg-yellow-600 hover:text-white w-full"
             >
-                ADD TO CART
+                Ajouter au panier
             </button>
         );
     }
@@ -94,7 +94,7 @@ export function ActionButtonLarge(props: ActionButtonPropType) {
         return (
             <Link href="/login" passHref>
                 <button className="p-1 text-center border border-yellow-600 font-semibold rounded-md text-yellow-600 uppercase w-64 mb-4 focus:outline-none hover:bg-yellow-600 hover:text-white">
-                    ADD TO CART
+                    Ajouter au panier
                 </button>
             </Link>
         );
@@ -105,7 +105,7 @@ export function ActionButtonLarge(props: ActionButtonPropType) {
                 onClick={() => addItem!(product.id)}
                 className="p-1 text-center border border-yellow-600 font-semibold rounded-md text-yellow-600 uppercase w-64 mb-4 focus:outline-none hover:bg-yellow-600 hover:text-white"
             >
-                ADD TO CART
+                Ajouter au panier
             </button>
         );
     }
@@ -117,7 +117,7 @@ export function ActionButtonLarge(props: ActionButtonPropType) {
                 onClick={() => addItem!(product.id)}
                 className="p-1 text-center border border-yellow-600 font-semibold rounded-md text-yellow-600 uppercase w-64 mb-4 focus:outline-none hover:bg-yellow-600 hover:text-white"
             >
-                ADD TO CART
+                Ajouter au panier
             </button>
         );
     }
